@@ -49,7 +49,7 @@ const gameStatus = () => {
       });
       matchedCardsId = [];
       newGame();
-    }, 300);
+    }, 1000);
   }
 };
 
@@ -80,7 +80,7 @@ const isFlipped = (card) => {
 
           flippedCards = [];
           flippedCardsId = [];
-        }, 500);
+        }, 1000);
       }
     }
   }
