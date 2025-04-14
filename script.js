@@ -58,6 +58,10 @@ const isFlipped = (card) => {
     const flippedValue = document.querySelector(
       `#${card.firstElementChild.id} .card-back h3`
     ).innerHTML;
+
+    if (flippedCardsId.includes(card.firstElementChild.id)) {
+      return;
+    }
     flippedCards.push(flippedValue);
     flippedCardsId.push(card.firstElementChild.id);
 
